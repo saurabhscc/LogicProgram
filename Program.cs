@@ -12,6 +12,7 @@ namespace LogicProgram
             Console.WriteLine("3 For: Prime Number ");
             Console.WriteLine("4 For: Reverse Number ");
             Console.WriteLine("5 For: Coupon  Number ");
+            Console.WriteLine("6 For: Stopwatch  Number ");
 
 
             int selection = Convert.ToInt32(Console.ReadLine());
@@ -42,9 +43,14 @@ namespace LogicProgram
                     CopuonNumber CouponNo = new CopuonNumber();
                     CouponNo.Coupons();
                     break;
+                case 6:
+                    //Stop watch
+                    StopWatch Stopwatches = new StopWatch();
+                    Stopwatches.stopwatches();
+                    break;
 
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 5");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 6");
                     break;
             }
                     Console.ReadLine();
