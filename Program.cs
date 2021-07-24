@@ -11,6 +11,8 @@ namespace LogicProgram
             Console.WriteLine("2 For: Perfect Number ");
             Console.WriteLine("3 For: Prime Number ");
             Console.WriteLine("4 For: Reverse Number ");
+            Console.WriteLine("5 For: Coupon  Number ");
+
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -35,9 +37,14 @@ namespace LogicProgram
                     ReverseOfNumber reverseNum = new ReverseOfNumber();
                     reverseNum.ReverseNumber();
                     break;
+                case 5:
+                    //Coupon Number
+                    CopuonNumber CouponNo = new CopuonNumber();
+                    CouponNo.Coupons();
+                    break;
 
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 4");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 5");
                     break;
             }
                     Console.ReadLine();
