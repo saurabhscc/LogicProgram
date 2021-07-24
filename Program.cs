@@ -10,6 +10,7 @@ namespace LogicProgram
             Console.WriteLine("1 For: Fibonacci Series ");
             Console.WriteLine("2 For: Perfect Number ");
             Console.WriteLine("3 For: Prime Number ");
+            Console.WriteLine("4 For: Reverse Number ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -29,9 +30,14 @@ namespace LogicProgram
                    PrimeNumber Primenumber = new PrimeNumber();
                     Primenumber.CheckPrimeNumber();
                     break;
+                case 4:
+                    //Reverese Number
+                    ReverseOfNumber reverseNum = new ReverseOfNumber();
+                    reverseNum.ReverseNumber();
+                    break;
 
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 -3");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 4");
                     break;
             }
                     Console.ReadLine();
