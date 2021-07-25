@@ -15,6 +15,7 @@ namespace LogicProgram
             Console.WriteLine("6 For: Stopwatch  Number ");
             Console.WriteLine("7 For: Vending Machine ");
             Console.WriteLine("8 For: DayOfWeek ");
+            Console.WriteLine("9 For: DegreeConversion ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -59,8 +60,14 @@ namespace LogicProgram
                     DayOfWeek dayOfWeek = new DayOfWeek();
                     dayOfWeek.Days();
                     break;
+                case 9:
+                    //DegreeConversion
+                    DegreeConversion degreeConversion = new DegreeConversion();
+                    degreeConversion.DegreeConv();
+                    break;
+
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 8");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 9");
                     break;
             }
                     Console.ReadLine();
