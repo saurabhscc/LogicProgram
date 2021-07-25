@@ -17,6 +17,7 @@ namespace LogicProgram
             Console.WriteLine("8 For: DayOfWeek ");
             Console.WriteLine("9 For: DegreeConversion ");
             Console.WriteLine("10 For: MonthlyPayment ");
+            Console.WriteLine("11 For: NewtonsMethod ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -71,8 +72,13 @@ namespace LogicProgram
                     MonthlyPayment monthlyPayment = new MonthlyPayment();
                     monthlyPayment.Pay();
                     break;
+                case 11:
+                    //NewtonsMethod
+                    NewtonsMethod newtonsMethod = new NewtonsMethod();
+                    newtonsMethod.sqrt();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 10");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 11");
                     break;
             }
                     Console.ReadLine();
