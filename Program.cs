@@ -19,6 +19,7 @@ namespace LogicProgram
             Console.WriteLine("10 For: MonthlyPayment ");
             Console.WriteLine("11 For: NewtonsMethod ");
             Console.WriteLine("12 For : DecimalToBinary ");
+            Console.WriteLine("13 For : Swap Nibble ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -83,8 +84,13 @@ namespace LogicProgram
                     DecimalToBinary decimalToBinary = new DecimalToBinary();
                     decimalToBinary.toBinary();
                     break;
-                default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 11");
+                case 13:
+                    //NibbleSwap
+                    SwapNibble swapNibble = new SwapNibble();
+                    swapNibble.SwapNibbles();
+                    break;
+                  default:
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 13");
                     break;
             }
                     Console.ReadLine();
