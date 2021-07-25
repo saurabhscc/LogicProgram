@@ -16,6 +16,7 @@ namespace LogicProgram
             Console.WriteLine("7 For: Vending Machine ");
             Console.WriteLine("8 For: DayOfWeek ");
             Console.WriteLine("9 For: DegreeConversion ");
+            Console.WriteLine("10 For: MonthlyPayment ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -65,9 +66,13 @@ namespace LogicProgram
                     DegreeConversion degreeConversion = new DegreeConversion();
                     degreeConversion.DegreeConv();
                     break;
-
+                case 10:
+                    //MonthlyPayment
+                    MonthlyPayment monthlyPayment = new MonthlyPayment();
+                    monthlyPayment.Pay();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 9");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 10");
                     break;
             }
                     Console.ReadLine();
