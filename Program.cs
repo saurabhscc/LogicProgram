@@ -13,6 +13,7 @@ namespace LogicProgram
             Console.WriteLine("4 For: Reverse Number ");
             Console.WriteLine("5 For: Coupon  Number ");
             Console.WriteLine("6 For: Stopwatch  Number ");
+            Console.WriteLine("7 For: Vending Machine ");
 
 
             int selection = Convert.ToInt32(Console.ReadLine());
@@ -48,9 +49,14 @@ namespace LogicProgram
                     StopWatch Stopwatches = new StopWatch();
                     Stopwatches.stopwatches();
                     break;
+                case 7:
+                    //Vending Machine
+                    VendingMachine Vendingmachine = new VendingMachine();
+                    Vendingmachine.CountCurrency();
+                        break;
 
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 6");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 7");
                     break;
             }
                     Console.ReadLine();
