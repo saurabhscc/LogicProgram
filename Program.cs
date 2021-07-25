@@ -14,7 +14,7 @@ namespace LogicProgram
             Console.WriteLine("5 For: Coupon  Number ");
             Console.WriteLine("6 For: Stopwatch  Number ");
             Console.WriteLine("7 For: Vending Machine ");
-
+            Console.WriteLine("8 For: DayOfWeek ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -54,9 +54,13 @@ namespace LogicProgram
                     VendingMachine Vendingmachine = new VendingMachine();
                     Vendingmachine.CountCurrency();
                         break;
-
+                case 8:
+                    //DayOfWeek
+                    DayOfWeek dayOfWeek = new DayOfWeek();
+                    dayOfWeek.Days();
+                    break;
                 default:
-                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 7");
+                    Console.WriteLine("Invalid Selection. Select in b/w  1 - 8");
                     break;
             }
                     Console.ReadLine();
