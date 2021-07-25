@@ -18,6 +18,7 @@ namespace LogicProgram
             Console.WriteLine("9 For: DegreeConversion ");
             Console.WriteLine("10 For: MonthlyPayment ");
             Console.WriteLine("11 For: NewtonsMethod ");
+            Console.WriteLine("12 For : DecimalToBinary ");
 
             int selection = Convert.ToInt32(Console.ReadLine());
             switch (selection)
@@ -76,6 +77,11 @@ namespace LogicProgram
                     //NewtonsMethod
                     NewtonsMethod newtonsMethod = new NewtonsMethod();
                     newtonsMethod.sqrt();
+                    break;
+                case 12:
+                    //DecimalToBinary
+                    DecimalToBinary decimalToBinary = new DecimalToBinary();
+                    decimalToBinary.toBinary();
                     break;
                 default:
                     Console.WriteLine("Invalid Selection. Select in b/w  1 - 11");
